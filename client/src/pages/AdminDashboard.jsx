@@ -249,7 +249,7 @@ export default function AdminDashboard() {
         </section>
 
         <section className="panel wide">
-          <h2 className="panel-title">Order history</h2>
+          <h2 className="panel-title">Historia ya Oda</h2>
           {decided.length === 0 ? (
             <p className="muted">Decided orders will show up here.</p>
           ) : (
