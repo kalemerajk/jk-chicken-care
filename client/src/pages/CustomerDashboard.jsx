@@ -109,7 +109,7 @@ export default function CustomerDashboard() {
           <span>Chicken Care</span>
         </div>
         <div className="topbar-right">
-          <span className="who">Habari,{user.name}</span>
+          <span className="who">Habari, {user.name}</span>
           <button className="btn-ghost" onClick={logout}>Sign out</button>
         </div>
       </header>
