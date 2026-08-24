@@ -176,7 +176,7 @@ export default function AdminDashboard() {
         </section>
 
         <section className="panel wide">
-          <h2 className="panel-title">Maomba yanayosubiri{pending.length > 0 && `(${pending.length})`}</h2>
+          <h2 className="panel-title">Oda zinazo subiri{pending.length > 0 && `(${pending.length})`}</h2>
           {loading ? (
             <p className="muted">Loading…</p>
           ) : pending.length === 0 ? (
