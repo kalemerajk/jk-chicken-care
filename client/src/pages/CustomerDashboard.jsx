@@ -141,7 +141,7 @@ export default function CustomerDashboard() {
         </section>
 
         <section className="panel">
-          <h2 className="panel-title">Request an order</h2>
+          <h2 className="panel-title">Weka Oda</h2>
           <form onSubmit={handleSubmit} className="order-form">
             {lines.map((line, index) => (
               <div className="order-line" key={index}>
