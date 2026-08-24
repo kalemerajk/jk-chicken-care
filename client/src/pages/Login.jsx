@@ -95,10 +95,7 @@ export default function Login({ mode = 'login' }) {
             <>New here? <Link to="/register">Create a customer account</Link></>
           )}
         </p>
-
-        {!isRegister && (
-          <p className="auth-hint">Admin login: admin@jk.com / admin123</p>
-        )}
+        
       </div>
     </div>
   );
