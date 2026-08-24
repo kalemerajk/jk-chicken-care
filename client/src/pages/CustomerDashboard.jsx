@@ -116,7 +116,7 @@ export default function CustomerDashboard() {
 
       <main className="layout">
         <section className="panel">
-          <h2 className="panel-title">Coop stock</h2>
+          <h2 className="panel-title">Stoko Iliyopo</h2>
           {loading ? (
             <p className="muted">Loading…</p>
           ) : (
