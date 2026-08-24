@@ -2,7 +2,12 @@ const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const bcrypt = require('bcryptjs');
 
-const db = new DatabaseSync(path.join(__dirname, 'chicken_care.db'));
+// In production, set DB_PATH to a location on a persistent disk (e.g. Render
+// disk mounted at /var/data), so the database survives restarts and
+// redeploys. Locally, this defaults to a file right next to this script.
+const dbPath = process.env.DB_PATH || path.join(__dirname, 'chicken_care.db');
+const db = new DatabaseSync(dbPath);
+console.log(`Using database at: ${dbPath}`);
 
 // Create tables if they don't exist
 db.exec(`
