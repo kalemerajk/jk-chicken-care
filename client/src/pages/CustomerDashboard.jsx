@@ -186,7 +186,7 @@ export default function CustomerDashboard() {
               />
             </label>
             <label className="field">
-              <span>Preferred delivery date (optional)</span>
+              <span>Unapendelea uletewe Tarehe ngapi (Hiali yako)</span>
               <input
                 type="date"
                 value={deliveryDate}
@@ -195,7 +195,7 @@ export default function CustomerDashboard() {
               />
             </label>
             <label className="field">
-              <span>Note (optional)</span>
+              <span>Ujumbe (Hiali)</span>
               <input
                 type="text"
                 value={note}
