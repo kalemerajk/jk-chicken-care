@@ -154,7 +154,7 @@ export default function AdminDashboard() {
               })}
 
               <form className="stock-type-card add-type-card" onSubmit={handleAddType}>
-                <span className="gauge-mini-label">Add a new type</span>
+                <span className="gauge-mini-label">Ongeza Aina Mpya</span>
                 <input
                   type="text"
                   placeholder="e.g. Turkeys"
