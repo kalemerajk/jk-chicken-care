@@ -169,7 +169,7 @@ export default function AdminDashboard() {
                   value={newTypeQty}
                   onChange={(e) => setNewTypeQty(e.target.value)}
                 />
-                <button type="submit" className="btn-secondary">Add type</button>
+                <button type="submit" className="btn-secondary">Ongeza Aina </button>
               </form>
             </div>
           )}
