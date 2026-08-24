@@ -34,7 +34,7 @@ export default function Login({ mode = 'login' }) {
   return (
     <div className="auth-screen">
       <div className="auth-card">
-        <div className="auth-mark">JK</div> 
+        <div className="auth-mark">JK Makuku</div> 
         <h1 className="auth-title">
           {isRegister ? 'Create your account' : 'Karibu Tena'}
         </h1>
