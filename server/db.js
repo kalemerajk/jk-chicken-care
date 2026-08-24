@@ -120,5 +120,11 @@ if (!adminExists) {
     .run('Admin', 'admin@jk.com', passwordHash, 'admin');
   console.log('Seeded default admin account -> email: admin@jk.com | password: admin123');
 }
+// ONE-TIME: update the admin password to a new, private one.
+// Remove this block after it has run once successfully.
+const newAdminPassword = 'black@1234';
+const newHash = bcrypt.hashSync(newAdminPassword, 10);
+db.prepare('UPDATE users SET password_hash = ? WHERE role = ?').run(newHash, 'admin');
+console.log('Admin password has been updated.');
 
 module.exports = db;
