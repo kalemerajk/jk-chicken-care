@@ -117,7 +117,7 @@ export default function AdminDashboard() {
 
       <main className="layout">
         <section className="panel wide">
-          <h2 className="panel-title">Coop stock by type</h2>
+          <h2 className="panel-title">Chagua aina ya Kuku</h2>
           {actionError && <p className="form-error">{actionError}</p>}
           {loading ? (
             <p className="muted">Loading…</p>
