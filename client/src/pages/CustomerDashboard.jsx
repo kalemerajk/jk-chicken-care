@@ -109,7 +109,7 @@ export default function CustomerDashboard() {
           <span>Chicken Care</span>
         </div>
         <div className="topbar-right">
-          <span className="who">Hi, {user.name}</span>
+          <span className="who">Habari,{user.name}</span>
           <button className="btn-ghost" onClick={logout}>Sign out</button>
         </div>
       </header>
@@ -143,7 +143,7 @@ export default function CustomerDashboard() {
         <section className="panel">
           <h2 className="panel-title">Weka Oda yako</h2>
           <form onSubmit={handleSubmit} className="order-form">
-            {lines.map((line, index) => (
+            {lines.map((line, index) => (abari,
               <div className="order-line" key={index}>
                 <select
                   value={line.stock_type_id}
@@ -172,11 +172,11 @@ export default function CustomerDashboard() {
               </div>
             ))}
             <button type="button" className="btn-secondary btn-add-line" onClick={addLine}>
-              + Add another type
+              + Ongeza aiina nyingine
             </button>
 
             <label className="field">
-              <span>Delivery location</span>
+              <span>Uletewe Sehemu gani</span>
               <input
                 type="text"
                 value={deliveryLocation}
@@ -205,7 +205,7 @@ export default function CustomerDashboard() {
             </label>
             {error && <p className="form-error">{error}</p>}
             {success && <p className="form-success">{success}</p>}
-            <button type="submit" className="btn-primary">Send request</button>
+            <button type="submit" className="btn-primary">Tuma oda yako</button>
           </form>
         </section>
 
