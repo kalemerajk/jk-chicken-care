@@ -92,7 +92,7 @@ export default function Login({ mode = 'login' }) {
           {isRegister ? (
             <>Already have an account? <Link to="/login">Sign in</Link></>
           ) : (
-            <>New here? <Link to="/register">Create a customer account</Link></>
+            <>Mgeni Hapa? <Link to="/register">Sajiri akaunti ya mteja</Link></>
           )}
         </p>
         
