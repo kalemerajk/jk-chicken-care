@@ -34,14 +34,14 @@ export default function Login({ mode = 'login' }) {
   return (
     <div className="auth-screen">
       <div className="auth-card">
-        <div className="auth-mark">JK</div>
+        <div className="auth-mark">JK</div> 
         <h1 className="auth-title">
-          {isRegister ? 'Create your account' : 'Welcome back'}
+          {isRegister ? 'Create your account' : 'Karibu Tena'}
         </h1>
         <p className="auth-subtitle">
           {isRegister
             ? 'Sign up to start requesting chicken orders.'
-            : 'Sign in to the JK Chicken Care customer portal.'}
+            : 'Ingia JK MaKuku Care mfumo wa wateja.'}
         </p>
 
         <form onSubmit={handleSubmit} className="auth-form">
