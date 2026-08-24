@@ -143,7 +143,7 @@ export default function CustomerDashboard() {
         <section className="panel">
           <h2 className="panel-title">Weka Oda yako</h2>
           <form onSubmit={handleSubmit} className="order-form">
-            {lines.map((line, index) => (abari,
+            {lines.map((line, index) => (
               <div className="order-line" key={index}>
                 <select
                   value={line.stock_type_id}
