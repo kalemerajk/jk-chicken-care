@@ -62,7 +62,8 @@ db.exec(`
 function ensureOrderColumn(name, definition) {
   const columns = db.prepare("PRAGMA table_info(orders)").all();
   const exists = columns.some((col) => col.name === name);
-  if (!exists) {
+  if (!exists) 
+    {
     db.exec(`ALTER TABLE orders ADD COLUMN ${definition}`);
     console.log(`Migrated: added ${name} column to orders table`);
   }
